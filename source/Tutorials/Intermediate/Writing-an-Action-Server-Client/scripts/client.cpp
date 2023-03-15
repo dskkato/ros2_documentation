@@ -18,6 +18,7 @@ public:
   using Fibonacci = action_tutorials_interfaces::action::Fibonacci;
   using GoalHandleFibonacci = rclcpp_action::ClientGoalHandle<Fibonacci>;
 
+  ACTION_TUTORIALS_CPP_EXPORT
   explicit FibonacciActionClient(const rclcpp::NodeOptions & options)
   : Node("fibonacci_action_client", options)
   {
