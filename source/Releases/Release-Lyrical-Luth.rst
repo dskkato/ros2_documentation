@@ -139,7 +139,8 @@ Use ``rosidl::Buffer`` to publish and subscribe ROS messages without moving data
 
 All ``uint8[]`` fields now have the type ``rosidl::Buffer<uint8_t>`` in C++ instead of ``std::vector<uint8_t>``.
 Define your ROS messages with ``uint8[]`` fields and install an appropriate ``rosidl::BufferBackend`` implementation.
-Note that only publishers and subscribers using ``rmw_fastrtps_cpp`` may use this feature for now, but `support in Zenoh is coming <https://github.com/ros2/rmw_zenoh/pull/930>`_.
+Publishers and subscribers using ``rmw_fastrtps_cpp`` may use this feature.
+Support for ``rmw_zenoh_cpp`` is available starting with version ``0.10.5``.
 
 Using a custom hardware accelerator or machine learning library?
 You can benefit from this too.
